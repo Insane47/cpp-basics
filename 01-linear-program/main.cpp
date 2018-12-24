@@ -1,15 +1,16 @@
 #include <iostream>
-#include <conio.h>
 #include <cmath>
+
 using namespace std;
-int main()
-{
-	float a, z1, z2;
-	cout << "vvedite a= ";
+
+int main() {
+	double a;
+	cout << "Enter alpha -> ";
 	cin >> a;
-	z1 = (1 - 2 * pow(sin(a), 2)) / (1 + sin(2 * a));
-	z2 = (1 - tan(a)) / (1 + tan(a));
-	cout << "z1=" << z1 << endl;
-	cout << "z2=" << z2 << endl;
+
+	double z1 = (1 - 2 * pow(sin(a), 2)) / (1 + sin(2 * a));
+	double z2 = (1-tan(a))/ (1 + tan(a));
+	cout << "\nz1= " << z1 << "\nz2= " << z2 << endl;
+
 	return 0;
 }
